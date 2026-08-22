@@ -22,9 +22,11 @@ Another example of code refactoring to improve functionality and efficiency came
 ## Testing
 
 ### Methods for request and retrieval necessitate various types of API testing of endpoints, in addition to the difficulties of testing with added layers of security. Explain your understanding of methods, endpoints, and security in a full stack application.
+In a full stack application like this one, methods are functions like GET, POST, PUT, and DELETE used to interact with endpoints to obtain or manipulate data and change what is displayed to the user. Security is used to guard the application against malicious actors exploiting weaknesses at the connections between endpoints. In its current state, the admin SPA lacks many of the security features one would hope to see in a publicly released application and is only really protected by an authentication system that requires a Java Web Token obtained from a valid login before trips can be added or edited.
+
+Testing methods was often first done using Postman to see if the requests were properly being sent and received. To further confirm a method used to manipulate the data in the MongoDB database like a POST or PUT command was successful, MongoDB Compass could be used to view the database directly and observe any changes. When on the SPA in a web browser, opening the developer tools panel was also a great way to debug and confirm that everything was working correctly and no errors were being output to console. Lastly, testing involves attempting to actually use the application and confirming that it is working as intended, as it could be that a feature is not properly implemented despite no errors being output.
 
 ## Reflection
 
-### How has this course helped you in reaching your professional goals?
-
-### What skills have you learned, developed, or mastered in this course to help you become a more marketable candidate in your career field?
+### How has this course helped you in reaching your professional goals? What skills have you learned, developed, or mastered in this course to help you become a more marketable candidate in your career field?
+This course has helped me in reaching my professional goals as it has given me the opportunity to go through the complete full stack development of a web application. This experience will be important when working on my own websites or working on websites for employers. On top of this, it showed me how to have a static HTML client-side frontend and an admin-facing SPA that are connected, with both referencing the data in one MongoDB database. In the very least, the concept and methodology I learned will be useful even if the exact structure or programs used in future projects differ.
